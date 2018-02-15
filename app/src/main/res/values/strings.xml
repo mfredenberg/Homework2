@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Homework2</string>
+
+    <string name="hairStyle_Choice">Choose a Hair Style</string>
+
+    <string-array name="styleArray">
+        <item>Military Cut</item>
+        <item>Side Hair</item>
+        <item>Mohawk</item>
+    </string-array>
+
+    <string name="radioHair">Hair</string>
+    <string name="radioEyes">Eyes</string>
+    <string name="radioSkin">Skin</string>
+    <string name="buttonDisplay">Choose</string>
+</resources>

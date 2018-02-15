@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.fredenbe20.realhomework2.MainActivity">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewRedSB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Red: " />
+
+        <TextView
+            android:id="@+id/textViewGreenSB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Green:" />
+
+        <TextView
+            android:id="@+id/textViewBlueSB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Blue:" />
+
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <SeekBar
+                android:id="@+id/seekBarRed"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:max="255" />
+
+            <SeekBar
+                android:id="@+id/seekBarGreen"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:max="255" />
+
+            <SeekBar
+                android:id="@+id/seekBarBlue"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:max="255" />
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:orientation="vertical">
+
+            <Spinner
+                android:id="@+id/hairStyleSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/styleArray"
+                android:prompt="@string/hairStyle_Choice" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioGroup
+                android:id="@+id/radioChoice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/radioHair"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radioHair" />
+
+                <RadioButton
+                    android:id="@+id/radioEyes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radioEyes" />
+
+                <RadioButton
+                    android:id="@+id/radioSkin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:duplicateParentState="false"
+                    android:text="@string/radioSkin" />
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/randomFaceButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Random Face" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.example.fredenbe20.realhomework2.Face
+        android:id="@+id/faceSurfaceView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</android.widget.LinearLayout>
