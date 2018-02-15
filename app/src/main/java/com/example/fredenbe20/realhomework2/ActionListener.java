@@ -11,6 +11,7 @@ import java.util.ArrayList;
 
 /**
  * Created by fredenbe20 on 2/14/2018.
+ * Mason Fredenberg
  */
 
 public class ActionListener implements View.OnClickListener, SeekBar.OnSeekBarChangeListener,

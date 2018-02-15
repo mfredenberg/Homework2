@@ -11,7 +11,7 @@ import android.widget.RadioGroup;
 import android.widget.SeekBar;
 import android.widget.Spinner;
 import android.widget.TextView;
-
+//Mason Fredenberg
 public class MainActivity extends AppCompatActivity {
 
     @Override

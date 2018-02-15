@@ -11,6 +11,7 @@ import java.util.Random;
 
 /**
  * Created by fredenbe20 on 2/14/2018.
+ * Mason Fredenberg
  */
 
 public class Face extends SurfaceView {
