@@ -47,7 +47,7 @@ public class Face extends SurfaceView {
         setSkinColor(gen.nextInt(255), gen.nextInt(255), gen.nextInt(255));
         setHairColor(gen.nextInt(255), gen.nextInt(255), gen.nextInt(255));
         setEyeColor(gen.nextInt(255), gen.nextInt(255), gen.nextInt(255));
-        hairStyle = gen.nextInt(2);
+        hairStyle = gen.nextInt(3);
         setRadioNum(gen.nextInt(3));
     }
 
@@ -100,6 +100,7 @@ public class Face extends SurfaceView {
     //setting methods
     public void setEyeColor(int r, int g, int b) {
         this.eyeColor = Color.rgb(r, g, b);
+        invalidate();
     }
     public void setSkinColor(int r, int g, int b){
         this.skinColor = Color.rgb(r, g, b);
